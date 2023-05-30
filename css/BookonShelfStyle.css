@@ -1,0 +1,488 @@
+body {
+    font-family: "Arial", "Helvetica", "Verdana", "sans-serif";
+    margin: 0;
+    padding: 0;
+}
+
+body.beginPage {
+    background-image: url("../images/Background.png");
+    background-size: cover;
+}
+
+h1 {
+    text-align: center;
+}
+
+div.loginfailed {
+    text-align: center;
+    background-color: white;
+    color: red;
+    margin: 0;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    height: 50px;
+    width: 390px;
+}
+
+div.login {
+    background-color: white;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    height: 425px;
+    width: 390px;
+}
+
+div.loginBoxes {
+    position: absolute;
+    width: 210px;
+    left: 25%;
+    top: 27.5%;
+    height: 250px;
+}
+
+div.loginBttnContainer {
+    position: absolute;
+    left: 25%;
+    top: 80%;
+    display: inline-block;
+}
+
+div.registerBttnContainer {
+    position: absolute;
+    top: 85%;
+    left: 28%;
+}
+
+div.register {
+    background-color: white;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    height: 575px;
+    width: 525px;
+}
+
+div.registerLeft {
+    position: fixed;
+    top: 17%;
+    width: 50%;
+    margin-left: 10px;
+}
+
+div.registerRight {
+    position: fixed;
+    top: 17%;
+    width: 50%;
+    margin-left: 53%;
+}
+
+.dataflexcontainer div {
+    background-color: #c1e5c1;
+    height: 300px;
+    width: 300px;
+    margin-top: 35px;
+    margin-left: 100px;
+}
+
+div.dataToevoegenContainerLeft {
+    position: relative;
+    top: 10%;
+    left: 30%;
+    width: 300px;
+}
+
+div.dataToevoegenContainerRight {
+    position: relative;
+    left: 50%;
+    width: 300px;
+    margin-top: -273px;
+}
+
+div.container {
+    height: 100%;
+    width: 100%;
+}
+
+div.sidebar {
+    height: 100%;
+    width: 160px;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: darkseagreen;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+div.topbar {
+    width: 100%;
+    padding-top: 1px;
+    padding-bottom: 2px;
+    font-size: 20px;
+    color: white;
+    background-color: #7bab7b;
+}
+
+div.topbar p {
+    margin-left: 170px;
+}
+
+div.main {
+    margin-left: 160px;
+    padding: 5px 10px;
+}
+
+div.informatiepage {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    margin-left: 200px;
+    padding: 5px 10px;
+}
+
+img.informatiepage_image {
+    position: absolute;
+    top: 12%;
+    left: 50%;
+    height: 350px;
+    width: 245px;
+}
+
+div.toevoegen_container {
+    position:absolute;
+    top: 10%;
+    left: 25%;
+    width: 300px;
+}
+
+.toevoegen_container input {
+    width: 80%;
+}
+
+.toevoegen_container button {
+    font-size: 20px;
+    background-color: #c1e5c1;
+    position: absolute;
+    border: none;
+    width: 200px;
+    height: 40px;
+    left: 7%;
+    top: 100%;
+}
+
+.toevoegen_container input[type=file] {
+    position: absolute;
+    top: 50%;
+    left: 150%;
+}
+
+div.aanpasseninfo_container {
+    position:absolute;
+    top: 9%;
+    left: 65%;
+}
+
+.aanpasseninfo_container p {
+    margin-top: 0;
+    margin-bottom: 40px;
+    width: 300px;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+
+img.aanpassenfoto_container {
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    height: 350px;
+    width: 245px;
+}
+
+div.aanpassen_container {
+    position: absolute;
+    top: 10%;
+    left: 15%;
+    width: 300px;
+}
+
+.flexcontainer {
+    margin-left: -10px;
+    margin-top: -10px;
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.flexcontainer img {
+    height: 250px;
+    width: 175px;
+}
+
+.flexcontainer div {
+    margin-top: 10px;
+    margin-left: 10px;
+    background-color: darkseagreen;
+    width: 440px;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.flexcontainer ul {
+    position: relative;
+    margin-top: -55%;
+    margin-right: 10px;
+    text-align: right;
+}
+
+.flexcontainer li {
+    margin-top: 15px;
+}
+
+.aanpassen_container input {
+    width: 60%;
+}
+
+.aanpassen_container input[type=submit] {
+    width: 33%;
+    background-color: #c1e5c1;
+}
+
+.sidebar a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+}
+
+.sidebar a:hover {
+    color: #fbfcc5;
+}
+
+input.logininput {
+    width: 85%;
+}
+
+.register input {
+    width: 85%;
+}
+
+button.loginButton {
+    color: white;
+    font-size: 20px;
+    background-color: darkseagreen;
+    border: 0;
+    border-radius: 5px;
+    padding: 6px 55px;
+}
+
+button.registerButton {
+    color: white;
+    font-size: 20px;
+    background-color: darkseagreen;
+    border: 0;
+    border-radius: 5px;
+    padding: 6px 55px;
+}
+
+button.loginButton:hover {
+    background-color: lightgreen;
+}
+
+button.registerButton:hover {
+    background-color: lightgreen;
+}
+
+img.sidebarphoto {
+    position: absolute;
+    width: 125px;
+    margin-left: 17px;
+    bottom: 20px;
+}
+
+img.sidebarphoto_admin {
+    position: absolute;
+    width: 125px;
+    margin-left: 17px;
+    bottom: 20px;
+}
+
+.textbox p {
+    width: 400px;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+
+button.lenen {
+    background-color: #9ac59a;
+    width: 50%;
+}
+
+button.reserveren {
+    background-color: #ef8a8a;
+    width: 50%;
+}
+
+button.aanpassen {
+    background-color: #f8ed75;
+    width: 50%;
+}
+
+button.terugbrengen {
+    background-color: #f8ed75;
+    width: 50%;
+}
+
+button.ongedaan {
+    background-color: #c2b860;
+    width: 50%;
+}
+
+button.onbeschikbaar {
+    background-color: #616b6a;
+    width: 50%;
+}
+
+.tableStyle {
+    background-color: darkseagreen;
+    width: 95%;
+    margin-top: 5px;
+    margin-left: 2.5%;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+table button {
+    width: 25%;
+    font-size: 15px;
+    border: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+th {
+    background-color: darkseagreen;
+    width: 17%;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th.slimmerth {
+    width: 10%;
+}
+
+td {
+    background-color: #c1e5c1;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.idTable {
+    width: 2%;
+}
+
+.registeredTable {
+    width: 5%;
+}
+
+.aanpassenTable {
+    background-color: #f8ed75;
+    width: 100%;
+}
+
+.verwijderenTable {
+    background-color: indianred;
+    width: 100%;
+}
+
+.alignCenter {
+    position: relative;
+    left: 37%;
+}
+
+.alignCenterButton {
+    position: relative;
+    left: 37%;
+    width: 250px;
+    background-color: #c1e5c1;
+}
+
+#shadowBox {
+    box-shadow: 0 7px 12px 0 #888888;
+}
+
+#registerWarning {
+    margin-top: -15px;
+    text-align: center;
+}
+
+#statusBad {
+    color: red;
+}
+
+#statusGood {
+    color: green;
+}
+
+#registerWarningShow {
+    color: red;
+    margin-top: -15px;
+    text-align: center;
+}
+
+#toevoegenWarning {
+    color: red;
+    margin-top: -15px;
+}
+
+#aanpassenWarning {
+    color: red;
+    margin-top: -45px;
+}
+
+#verwijderenButton {
+    background-color: indianred;
+    width: 100%;
+}
+
+#afbetalenButton {
+    background-color: #b0b0b0;
+    width: 100%;
+}
+
+#onbeschikbaarBttnTable {
+    width: 100%;
+    background-color: #616b6a;
+}
+
+#data_warning {
+    color: red;
+}
+
+.afbetalenTable {
+    background-color: #f8ed75;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+}
+
+.alignCenterSelect {
+    position: relative;
+    left: 42%;
+}
